@@ -1,0 +1,81 @@
+@import "vars";
+// @import "fonts";
+.footer{
+    background-color: $fon;
+}
+.footer__content{
+    max-height: 564px;
+    padding: 100px 0px;
+    border-bottom: 1px solid #424d53;
+}
+.footer__copy{
+    padding-top: 26px;
+    padding-bottom: 34px;
+    text-align: center;
+}
+.footer__copyright-text{
+    font-family: $roboto;
+    line-height: 36px;
+    color: #919699;
+}
+.footer__title{
+    font-size: 22px;
+    color: #fff;
+    font-family: $ral;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    position: relative;
+    &:after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: $green;
+        height: 3px;
+        width: 50px;
+    }
+}
+.footer__text{
+    color: $text;
+    margin-bottom: 30px;
+    font-family: $lato;
+    line-height: 24px;
+}
+.footer__adress,
+.footer-phone{
+    color: #fff;
+    font: $lato;
+    font-size: 14px;
+    font-family: $lato;
+    line-height: 24px;
+    position: relative;
+    padding-left: 30px;
+    &:before{
+        position: absolute;
+        font-family: 'icomoon';
+        color: $green;
+        font-size: 18px;
+        top: 0;
+        left: 0;
+    }
+}
+.footer__adress:before{
+    content: "\e947";
+    font-size: 18px;
+}
+.footer__phone{
+    display: block;
+    font-family: $lato;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 20px;
+    padding-left: 30px;
+    &:before{
+    content: "\f095";
+    font-family: 'icomoon';
+    color: $green;
+    font-size: 18px;
+    margin-left: -27px;
+    margin-right: 12px;
+    }
+}

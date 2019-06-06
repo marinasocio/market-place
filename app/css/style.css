@@ -153,6 +153,137 @@ li {
   align-items: center;
 }
 
+.fancybox-content {
+  background-color: #8bc34a;
+  max-width: 729px;
+  width: 100%;
+  padding-bottom: 70px;
+}
+
+.fancybox-content svg path {
+  fill: #fff;
+}
+
+.modal__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  font-size: 48px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal__form-inner {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.modal__form {
+  margin-top: 40px;
+}
+
+.modal__form label {
+  display: block;
+  color: #fff;
+}
+
+.modal__form label input {
+  display: block;
+  height: 40px;
+  margin-bottom: 8px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #76ae36;
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 10px;
+}
+
+.modal__form label:before {
+  font-family: 'icomoon';
+  position: absolute;
+  color: #fff;
+  left: 18px;
+  top: 12px;
+  font-size: 14px;
+}
+
+.modal__form .form__name {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: #fff;
+}
+
+.modal__form .form__name:before {
+  content: '\f007';
+  font-family: 'icomoon';
+}
+
+.modal__form .form_password {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+.modal__form .form_password:before {
+  content: '\f023';
+  font-family: 'icomoon';
+}
+
+.modal__form input[type="submit"] {
+  color: #000;
+  background-color: white;
+  box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75);
+  width: 139px;
+  height: 48px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 24px;
+  outline: none;
+}
+
+.form__link {
+  margin-left: 10px;
+  width: 100%;
+  display: inline-block;
+  background-color: #76ae36;
+  color: #fff;
+  max-width: 247px;
+  width: 100%;
+  text-align: center;
+  height: 49px;
+  padding: 14px 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.form__link:before {
+  content: '\f044';
+  color: #fff;
+  font-size: 14px;
+  font-family: 'icomoon';
+  padding-right: 10px;
+}
+
+.form__nopass {
+  padding-top: 18px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .footer {
   background-color: #263238;
 }
@@ -319,7 +450,7 @@ a:before {
   width: 260px;
 }
 
-button {
+.footer button {
   width: 43px;
   height: 38px;
   background-color: #8bc34a;
@@ -330,7 +461,7 @@ button {
   margin-top: 1px;
 }
 
-button:after {
+.footer button:after {
   content: "\f124";
   font-family: 'icomoon';
   color: #fff;

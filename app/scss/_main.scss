@@ -1,0 +1,188 @@
+@import "vars";
+.portfolio{
+    background-color: #f4f6f5;
+    padding: 100px 0;
+}
+.portfolio__title{
+    text-align: center;
+    color: $fon;
+    line-height: 60px;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: $roboto;
+}
+.item{
+    max-width: 440px;
+    width: 100%;
+    border: 1px solid #e7ecf2;
+    margin-bottom: 30px;
+    position: relative;
+    &.promo{
+        &:before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top:0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 30px 30px 30px 30px;
+            border-color: $green transparent transparent $green; 
+        }
+        &:after{
+            content: "\f0e7";
+            font-family: 'icomoon';
+            color: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 18px;
+            padding-top: 11px;
+            padding-left: 14px;
+        }
+    }
+}
+.item__info{
+    background-color: #fff;
+    border-bottom: 1px solid #e7ecf2;
+    padding-left: 30px;
+    padding-right: 30px;
+    min-height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item__img{
+    display: block;
+    img{
+        display: block;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+.item__info-box{
+    font-weight: 500;
+    line-height: 24px;
+    font-family: $roboto;
+    max-width: 290px;
+    width: 100%;
+}
+.item__info-name{
+    font-size: 18px;
+    color: $fon;
+    text-decoration: none;
+    display: block;
+}
+.item__info-category{
+    font-size: 14px;
+    color: $green;
+    text-decoration: none;
+    display: block;
+}
+.item__price{
+    font-size: 20px;
+    font-family: $roboto;
+    font-weight: 700;
+}
+.item__profile-box{
+    background-color: #fff;
+    border-bottom: 1px solid #e7ecf2;
+    padding-left: 30px;
+    padding-right: 30px;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item__profile{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 60px;
+    color: $toptext;
+    text-decoration: none;
+    font-family: $roboto;
+    display: flex;
+    align-items: center;
+    img{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+}
+.item__profile-rate{
+    display: flex;
+    align-items: center;
+    li{
+        display: inline-block;
+        padding-right: 2px;
+        span{
+            color: #ffa726;
+        }
+    }
+}
+.item__profile-ratenamber{
+    color: $fon;
+    font-family: $roboto;
+    padding-left: 13px;
+}
+.portfolio__content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.portfolio__btn{
+    margin-bottom: 60px;
+    text-align: center;
+    button{
+        background-color: #fff;
+        border: none;outline: none;
+        margin-left: 3px;
+        margin-right: 3px;
+        font-size: 14px;
+        color: #263238;
+        padding: 10px 20px;
+        font-weight: 500;
+        cursor: pointer;
+        font-family: $roboto;
+        &.mixitup-control-active{
+            background-color: $red;
+            color: #fff;
+        }
+    }
+}
+.slider{
+    padding: 100px 0px 120px;
+    .slick-dots{
+        text-align: center;
+        li{
+            display: inline-block;
+            margin-left: 4px;
+            margin-right: 4px;
+            button{
+                font-size: 0px;
+                padding: 0px;
+                border-radius: 50%;
+                background-color: rgb(232, 232, 232);
+                width: 22px;
+                height: 22px;
+                border: none;
+                outline: none;
+            }
+            &.slick-active{
+                button{
+                    background-color: $green;
+                }
+            }
+        }
+    }
+}
+.slider__title{
+    font-family: $roboto;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-weight: 700;
+    color: $fon;
+}
